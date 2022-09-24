@@ -1,0 +1,31 @@
+
+<%- include('partials/_header') -%>
+
+
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+                        <div class="my-5">
+                            
+                            <form name="publishcontact" method="POST" action="/contact">
+                                <input type="text" name="name"  id="cname" class="form-control" placeholder="Please write username">
+                                <br>
+                                <input type="text" name="email" id="cemail" class="form-control" placeholder="Email">
+                                <br>
+                                <input type="number" name="phone" id="cphone" class="form-control" placeholder="Phone">
+                                <br>
+                                <input type="text" name="message" id="cmessage" class="form-control" placeholder="Message">
+                                <br>
+                                <button class="btn btn-light" type="submit" value="POST" id="submit"> SEND </button>
+                            </form>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <%- include('partials/_header') -%>
